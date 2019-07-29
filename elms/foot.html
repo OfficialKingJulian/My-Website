@@ -1,0 +1,67 @@
+<footer>
+          <div class="left">
+            <h3>
+              Get in Touch
+            </h3>
+            <p>
+              Email: <a href="mailto:contact@julians.email" class="highlight">contact@julians.email</a>
+            <br />
+              Public Key: <a href="public-key.txt" class="highlight">Found Here</a>
+            <br />
+Twitter: <a href="https://twitter.com/OfficialKingJ" class="highlight">@OfficialKingJ</a>
+            </p>
+          </div>
+          <div class="center">
+            <p>
+              Check out this site on <a href="https://github.com/OfficialKingJulian/My-Website" class="highlight" target="_blank">GitHub</a>!
+              <br />
+              About <a href="/cookies" class="highlight">Cookies</a>.
+            </p>
+          </div>
+          <div class="right">
+            <h3>
+              About
+            </h3>
+            <p>
+              I'm Julian Orchard and I enjoy marketing, the world of computers, and everything in between.
+            </p>
+          </div>
+        </footer>
+        <script type="text/javascript">
+         // Create Leading Chars
+          window.onload = function() {
+            var larchars = document.getElementsByClassName("larchar");
+            for (var i = 0; i < larchars.length; i++) {
+              var larchar = larchars[i];
+              var larcharContent = larchar.innerHTML;
+
+              var node = document.createElement("span");
+              var textnode =  document.createTextNode(larcharContent.charAt(0));
+              node.appendChild(textnode);
+              larchar.appendChild(node);
+            }
+          }
+        // Scrolling Menu
+          window.onscroll = function() {
+            scrollMenu2()
+          };
+          function scrollMenu2() {
+            var navBar = document.getElementsByTagName("ul")[0];
+            var hero = document.getElementById("hero");
+            if ( document.body.scrollTop > 450 || document.documentElement.scrollTop > 450 ) {
+              navBar.className = "fixed";
+              hero.style.marginTop = "4.5%";
+              // id hero padding top 10%;
+            } else {
+              navBar.className = "";
+              hero.style.marginTop = "0%";
+            }
+          }
+
+
+        </script>
+
+
+
+
+

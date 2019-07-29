@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Blog Template | Julian</title>
+		<link href="/style.css" rel="stylesheet" type="text/css" />
+	<head>
+
+	<body>
+		<nav>
+			<ul>
+				<li>
+					<a href="/projects" class="highlight">
+						Projects
+					</a>
+				</li>
+				<li>
+					<a href="/blog" class="highlight">
+						Blog
+					</a>
+				</li>
+				<li>
+					<a href="/contact" class="highlight">
+						Contact
+					</a>
+				</li>
+			</ul>
+		</nav>
+		<section id="hero">
+			<div>
+				<h1>
+					My Name Is Julian, <b>I Love Marketing</b>
+				</h1>
+				<h3>
+					A relevant subheadding goes here. It's used to say more, in a few words.
+				</h3>
+				<br />
+				<h3>
+					<a href="" class="arrow">Discover</a>
+				</h3>
+			</div>
+		</section>
+		<section id="content">
+			<div class="content-left">
+				<h3>Collections:</h3>
+				<ul>
+					<li>
+						<a href="">
+							Archive
+						</a>
+					</li>
+					<li>
+						<a href="">
+							Tags
+						</a>
+					</li>
+					<li>
+						<a href="">
+							This Year
+						</a>
+					</li>
+				</ul>
+			</div><!--
+		 --><div class="content-right">
+		 		<div class="rel">
+			 		<h2 class="larchar">An Exploration In Discovery</h2>
+				</div>
+				<p>
+					This is the page content, it can take the form of a variety of different things, but the best thing is when it's organic. I needs to be organic, original and nice. I think it's the best writing you'll ever have read.
+				</p>
+				<p>
+					However, if it doesn't look good, <a href="" class="highlight">it won't look good</a>, and that'll be that. Sadly. This is the page content, it can take the form of a variety of different things, but the best thing is when it's organic. I needs to be organic, original and nice. I think it's the best writing you'll ever have read. This is the page content, it can take the form of a variety of different things, but the best thing is when it's organic. I needs to be organic, original and nice. I think it's the best writing you'll ever have read.
+				</p>
+				<div class="rel">
+					<h2 class="larchar">Once Again</h2>
+				</div>
+				<p>
+					However, if it doesn't look good, it won't look good, and that'll be that. Sadly. This is the page content, it can take the form of a variety of different things, but the best thing is when it's organic. <a href="" class="highlight">I needs to be organic</a>, original and nice. I think it's the best writing you'll ever have read.
+				</p>
+				<p>
+					This is the page content, it can take the form of a variety of different things, but the best thing is when it's organic. I needs to be organic, original and nice. I think it's the best writing you'll ever have read.
+				</p>
+				<p>
+					This is the page content, it can take the form of a variety of different things, but the best thing is when it's organic. I needs to be organic, original and nice. I think it's the best writing you'll ever have read.
+				</p>
+				<p>
+					However, if it doesn't look good, it won't look good, and that'll be that. Sadly. This is the page content, it can take the form of a variety of <a href="" class="highlight">different things</a>, but the best thing is when it's organic. I needs to be organic, original and nice. I think it's the best writing you'll ever have read. This is the page content, it can take the form of a variety of different things, but the best thing is when it's organic. I needs to be organic, original and nice. I think it's the best writing you'll ever have read.
+				</p>
+			</div>
+		</section>
+		<footer>
+			<div class="left">
+				This is the footer
+			</div>
+			<div class="center">
+				This is the footer
+			</div>
+			<div class="right">
+				This is the footer
+			</div>
+		</footer>
+		<script type="text/javascript">
+		 // Create Leading Chars
+			window.onload = function() {
+				var larchars = document.getElementsByClassName("larchar");
+				for (var i = 0; i < larchars.length; i++) {
+					var larchar = larchars[i];
+					var larcharContent = larchar.innerHTML;
+
+					var node = document.createElement("span");
+					var textnode =  document.createTextNode(larcharContent.charAt(0));
+					node.appendChild(textnode);
+					larchar.appendChild(node);
+				}
+			}
+		</script>
+	</body>
+</html>
